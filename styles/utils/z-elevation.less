@@ -1,0 +1,34 @@
+/**
+ * Description: Drop shadows generator helper.
+ * Author: Mattia Astorino
+ *
+ * How to use:
+ * .z-elevation( 0-5, #000 );
+ */
+
+
+.z-elevation( @depth: 0, @color: #000 ) {
+
+  // Render dropshadows for elevation 0
+  & when ( @depth = 0 ) { }
+
+  // Render dropshadows for elevation 1
+  & when ( @depth = 1 ) {
+  box-shadow: 0 1px 4px 0 fade( @color, 37% );  }
+
+  // Render dropshadows for elevation 2
+  & when ( @depth = 2 ) {
+  box-shadow: 0 2px 2px 0 fade( @color, 20% ), 0 6px 10px 0 fade( @color, 30% );  }
+
+  // Render dropshadows for elevation 3
+  & when ( @depth = 3 ) {
+  box-shadow: 0 11px 7px 0 fade( @color, 19% ), 0 13px 25px 0 fade( @color, 30% );  }
+
+  // Render dropshadows for elevation 4
+  & when ( @depth = 4 ) {
+  box-shadow: 0 14px 12px fade( @color, 17% ), 0 20px 40px 0 fade( @color, 30% );  }
+
+  // Render dropshadows for elevation 5
+  & when ( @depth = 5 ) {
+  box-shadow: 0 17px 17px 0 fade( @color, 15% ), 0 27px 55px 0 fade( @color, 30% );  }
+}
