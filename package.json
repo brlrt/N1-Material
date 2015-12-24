@@ -1,0 +1,14 @@
+{
+  "name": "N1-Material",
+  "theme": "Material Theme",
+  "version": "0.1.0",
+  "description": "Material Theme for Nylas N1",
+  "license": "GPL-3.0",
+  "engines": {
+    "nylas": "*"
+  },
+  "styleSheets": [
+    "main"
+  ],
+  "private": true
+}
