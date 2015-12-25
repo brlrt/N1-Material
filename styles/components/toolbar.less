@@ -5,6 +5,17 @@
 
 
 // main toolbar
+.sheet-toolbar .item-back {
+
+  .item-back-title {
+  color: @white;}
+
+  img.content-mask {
+  background-color: @white; }
+}
+
+
+// main toolbar container
 .sheet-toolbar-container {
 background: @toolbar-background-color;
 box-shadow: inset 0 1px 0 lighten( @toolbar-background-color, 5% );
@@ -27,4 +38,4 @@ cursor: pointer !important; }
 
 .btn img.content-mask,
 .mode-toggle.mode-false .content-mask {
-background-color: fade( @white, 80% ); }
+background-color: @white; }
